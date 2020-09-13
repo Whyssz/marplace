@@ -3,5 +3,101 @@
 @import "fonts";
 
 //start header
+.header__top{
+  background-color: #eef1f3;
+}
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.header-btn{
+  margin-left: auto;
+  a{
+    line-height: 0;
+    padding: 15px 18px;
+    width: 140px;
+    border-radius: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    background-color: $blue;
+  }
+}
+.header-badges{
+  margin: 0 30px;
+}
+.header__user{
+  display: flex;
+  .avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .name{
+    @include f500;
+  }
+  span{
+    display: block;
+    color: $blue;
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
 
+.header__bottom{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+.menu-list{
+  li{
+    display: inline-block;
+    & + li{
+      margin-left: 20px;
+    }
+  }
+  a{
+    font-size: 15px;
+    color: #333;
+    text-transform: uppercase;
+  }
+}
+.header__search{
+  max-width: 360px;
+  text-align: center;
+  position: relative;
+  input{
+    display: block;
+    min-width: 340px;
+    height: 46px;
+    border-radius: 30px;
+    border: 1px solid #dbe1e6;
+    outline: none;
+    font-size: 15px;
+    padding-left: 25px;
+    padding-right: 80px;
+  }
+  button{
+    position: absolute;
+    width: 70px;
+    height: 46px;
+    border-radius: 30px;
+    top: 0;
+    right: 0;
+    border: none;
+    outline: none;
+    background-color: $blue;
+    cursor: pointer;
+    &:before{
+      content: "\f002";
+      font-size: 15px;
+      font-family: 'icomoon';
+      color: #fff;
+    }
+  }
+}
 
