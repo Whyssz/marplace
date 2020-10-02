@@ -99,7 +99,7 @@ $(function () {
             $('form').slideToggle()
         });
 
-    var behaviourSlider = document.getElementById('price-slider');
+    let behaviourSlider = document.getElementById('price-slider');
 
     noUiSlider.create(behaviourSlider, {
         start: [30, 300],
@@ -116,8 +116,8 @@ $(function () {
         },
     });
 
+});
+
+$(function () {
     var mixer = mixitup('.new-products__inner');
-
-
-
 });
