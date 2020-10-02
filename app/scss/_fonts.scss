@@ -45,6 +45,12 @@
 .icon-user:before {
   content: "\f007";
 }
+.icon-th:before {
+  content: "\f00a";
+}
+.icon-th-list:before {
+  content: "\f00b";
+}
 .icon-signal:before {
   content: "\f012";
 }
@@ -159,8 +165,17 @@
 .icon-html5:before {
   content: "\f13b";
 }
+.icon-ellipsis-h:before {
+  content: "\f141";
+}
 .icon-ellipsis-v:before {
   content: "\f142";
+}
+.icon-long-arrow-left:before {
+  content: "\f177";
+}
+.icon-long-arrow-right:before {
+  content: "\f178";
 }
 .icon-pagelines:before {
   content: "\f18c";
