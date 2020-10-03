@@ -3159,5 +3159,26 @@ p,.auth-content__title{
   color: $text;
 }
 //end become-auth
+//start terms
+.terms{
+  padding: 60px 0;
+}
+.terms__inner{
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+  border-radius: 4px;
+  width: 100%;
+}
+h2,h3,h4,.terms__inner-title{
+  color: #000;
+  font-size: 24px;
+  padding: 40px 30px 30px;
+  border-bottom: 1px solid #ececec;
+}
+p,.terms__inner-text{
+  margin: 30px 30px 0;
+  padding-bottom: 40px;
+}
+//end terms
 //start
 @import "media";
