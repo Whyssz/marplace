@@ -1854,6 +1854,19 @@ p, .join-inner__content{
   flex-direction: column;
   margin: 0 auto;
 }
+h1,h2,h3,.search-product__title{
+  margin-bottom: 50px;
+  font-size: 30px;
+  @include f500;
+  color: #fff;
+  h2,h3,h4, span{
+    margin-top: 30px;
+    font-weight: 300;
+    display: block;
+    opacity: .9;
+    font-stretch: ultra-condensed;
+  }
+}
 .search-inner__title, h2,h3{
   color: #fff;
   font-size: 24px;
@@ -3098,5 +3111,53 @@ span, .aside-author__date{
   margin-right: 0;
 }
 //end 404err
+//start become-auth
+.become-auth{
+  background-color: #fff;
+}
+.auth-item__inner{
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+  &.rev-row{
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
+.become-auth__content{
+  max-width: 450px;
+  width: 100%;
+  margin-top: 30px;
+  .links{
+    text-align: center;
+    color: $blue;
+    background-color: #fff;
+    &:hover{
+      background-color: #5cccf8;
+      color: #fff;
+    }
+  }
+  .link-register{
+    color: #fff;
+    background-color: $blue;
+  }
+}
+.become-auth__img{
+  width: 458px;
+  height: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+p,.auth-content__title{
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 40px;
+}
+.auth-content__text{
+  margin-bottom: 30px;
+  color: $text;
+}
+//end become-auth
 //start
 @import "media";
