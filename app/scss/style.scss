@@ -2148,8 +2148,8 @@ h1,h2,h3,.search-product__title{
   }
   .jq-checkbox{
     margin-right: 10px;
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
     border: 1px solid #747b86;
     &.focused{
@@ -2163,8 +2163,8 @@ h1,h2,h3,.search-product__title{
     height: 6px;
     border-radius: 50%;
     background-color: #747b86;
-    margin-left: 1px;
-    margin-top: 1px;
+    margin-left: 1.5px;
+    margin-top: 2px;
   }
 }
 .aside-price__range {
@@ -2987,7 +2987,7 @@ h1,h2,h3,.search-product__title{
   color: #333;
   font-size: 15px;
   @include f500;
-  span{
+  a,span{
     font-weight: 400;
     color: $text;
     margin-right: auto ;
@@ -3314,21 +3314,21 @@ p, .email__inner-text{
 }
 .email-form{
   padding: 40px 50px 60px;
-  input{
-    width: 100%;
-    height: 50px;
-    background-color: #f4f5f8;
-    padding: 0 15px;
-    border: none;
-    margin-bottom: 30px;
-    &:placeholder{
-      padding: 0 15px;
-    }
-  }
   .links{
     background-color: $blue;
     color: #fff;
     cursor: pointer;
+  }
+}
+input{
+  width: 100%;
+  height: 50px;
+  background-color: #f4f5f8;
+  padding: 0 15px;
+  border: none;
+  margin-bottom: 30px;
+  &:placeholder{
+    padding: 0 15px;
   }
 }
 .email-form__title{
@@ -3337,6 +3337,91 @@ p, .email__inner-text{
   margin-bottom: 15px;
 }
 //end email
+//start login
+.login{
+  padding: 70px 0 100px;
+}
+.login__inner{
+  max-width: 555px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+  border-radius: 4px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+.login-header{
+  border-bottom: 1px solid #ececec;
+  padding: 60px 0 50px;
+  text-align: center;
+}
+h1,h2,h3,.login-header__title{
+  font-size: 26px;
+  color: #000;
+  margin-bottom: 20px;
+}
+p,.login-header__text{
+  font-size: $text ;
+}
+.login-form{
+  padding: 30px 50px 40px;
+  .login-form__name,
+  .login-form__pass{
+    color: #000;
+    @include f500;
+    margin-bottom: 15px;
+  }
+  button{
+    display: block;
+    margin-top: 30px;
+    background-color: $blue;
+    cursor:pointer;
+    &:hover{
+      background-color: $blue;
+      color: #fff;
+    }
+  }
+  form{
+    .jq-checkbox{
+      width: 20px;
+      vertical-align: text-top;
+      border-radius: 50%;
+      height: 20px;
+      margin-right: 10px;
+      border: 1px solid #c4c4c4;
+      position: relative;
+    }
+    .jq-checkbox.checked .jq-checkbox__div{
+      &:before{
+        content: "\f00c";
+        font-size: 15px;
+        top: 115%;
+        position: absolute;
+        right: 50%;
+        margin-top: -12px;
+        transform: translate(50%, -50%);
+        color: #fff;
+        font-family: 'icomoon';
+      }
+    }
+    .jq-checkbox.checked{
+      background-color: $blue;
+    }
+  }
+}
+.login-bottom{
+  padding: 0 50px 60px;
+  display: flex;
+  justify-content: space-between;
+  span{
+    color: $text;
+  }
+  a{
+    margin: 0 5px;
+    color: $blue;
+  }
+}
+
+// end login
 //start
 
 
