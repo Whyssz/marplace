@@ -33,6 +33,7 @@
 }
 
 
+
 .icon-search:before {
   content: "\f002";
 }
@@ -50,6 +51,9 @@
 }
 .icon-th-list:before {
   content: "\f00b";
+}
+.icon-check:before {
+  content: "\f00c";
 }
 .icon-signal:before {
   content: "\f012";
@@ -86,6 +90,12 @@
 }
 .icon-bar-chart-o:before {
   content: "\f080";
+}
+.icon-cogs:before {
+  content: "\f085";
+}
+.icon-gears:before {
+  content: "\f085";
 }
 .icon-heart-o:before {
   content: "\f08a";
