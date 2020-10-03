@@ -3180,5 +3180,121 @@ p,.terms__inner-text{
   padding-bottom: 40px;
 }
 //end terms
+//start price-cart
+.price-cart{
+  padding: 100px 0;
+  .advantages-head__title{
+    text-align: center;
+  }
+}
+.price-cart__items{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.price-item{
+  width: 360px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+  border-radius: 4px;
+  height: 100%;
+  border-top: 3px solid #ff6a6c;
+  &>a{
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: #ff6a6c;
+    &:hover{
+      background-color: #ff6a6c;
+      color: #fff;
+      font-size: 1.2em;
+    }
+  }
+}
+.price-item__title{
+  font-size: 24px;
+  color: #000;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ececec;
+}
+.price-item__price{
+  &>span{
+    color: $text;
+    display: inline-block;
+  }
+  .price-item__price-num{
+    position: relative;
+    font-size: 36px;
+    color: #000;
+    display: inline-block;
+    padding-left: 58px;
+    margin: 0 auto;
+    span{
+      left: 48px;
+      font-size: 18px;
+      top: -6px;
+      color: #000;
+      position: absolute;
+    }
+  }
+}
+.wrapper-info{
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  position: relative;
+  &:before{
+    content: '';
+    left: 0;
+    width: 7px;
+    height: 7px;
+    background-color:  #c5cad4;;
+    border-radius: 50%;
+    position: absolute;
+  }
+  span{
+    margin-bottom: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: $text;
+    position: relative;
+  }
+  .question-circle-o{
+    &:after{
+      content: "\f29c";
+      font-family: "icomoon";
+      position: absolute;
+      right: -21px;
+      top: 1px;
+    }
+  }
+  .mar-span{
+    padding-left: 5px;
+  }
+}
+.price-item__info{
+  padding-left: 25px;
+  color: #000;
+  @include f500;
+}
+.info-items{
+  margin-bottom: 40px;
+}
+.price-item.agency{
+  border-top: 3px solid #feb71d;
+  .links{
+    background-color: #feb71d;
+  }
+}
+.price-item.business{
+  border-top: 3px solid $blue;
+  .links{
+    background-color: $blue;
+  }
+}
+//end price-cart 
 //start
 @import "media";
