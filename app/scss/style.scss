@@ -3296,11 +3296,11 @@ p,.terms__inner-text{
   }
 }
 //end price-cart 
-//start login
-.login{
+//start email
+.email{
   padding: 70px 0 100px;
 }
-.login__inner{
+.email__inner{
   width: 555px;
   margin: 0 auto;
   height: 100%;
@@ -3308,11 +3308,11 @@ p,.terms__inner-text{
   border-radius: 4px;
   background-color: #ffffff;
 }
-p, .login__inner-text{
+p, .email__inner-text{
   padding: 50px 50px 30px;
   border-bottom: 1px solid #ececec;
 }
-.login-form{
+.email-form{
   padding: 40px 50px 60px;
   input{
     width: 100%;
@@ -3331,12 +3331,12 @@ p, .login__inner-text{
     cursor: pointer;
   }
 }
-.login-form__title{
+.email-form__title{
   color: #000;
   @include f500;
   margin-bottom: 15px;
 }
-//end login
+//end email
 //start
 
 
