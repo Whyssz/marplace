@@ -3066,8 +3066,37 @@ span, .aside-author__date{
 
 }
 //end single-product
-//start
+//start 404err
+.error{
+  padding: 100px 100px;
+}
+.error__inner{
+  text-align: center;
+  .links:hover{
+    background-color: #5cccf8;
+    color: #fff;
+  }
+}
+.error-inner__img{
+  width: 393px;
+  height: 447px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.error-inner__title{
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 40px;
+}
 
-//end
+.error-inner__btn{
+  outline: none;
+  background-color: $blue;
+  color: #fff;
+  margin-right: 0;
+}
+//end 404err
 //start
 @import "media";
