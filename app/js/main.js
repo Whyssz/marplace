@@ -13,7 +13,6 @@ $(function () {
         $('.icon-th-list').removeClass('active')
         $('.icon-th').addClass('active')
     });
-
     $(".rate-star").rateYo({
         starWidth: "16px",
         rating: 4.5,
@@ -21,6 +20,11 @@ $(function () {
         normalFill: 'transparent',
         ratedFill: '#ffc000',
     });
+    // $(".rate-star").rateYo().on("rateyo.change", function (e, data) {
+    //     let rating = data.rating;
+    //     $(this).parent().find('.score').text('score :'+ $(this).attr('data-rateyo-score'));
+    //     $(this).parent().find('.result').text('rating :'+ rating);
+    // });
     $(".rate-star__product").rateYo({
         starWidth: "13px",
         rating: 4.5,
