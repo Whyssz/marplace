@@ -21,7 +21,10 @@ gulp.task('style', () => {
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
         'node_modules/slick-carousel/slick/slick.css',
-        'node_modules/magnific-popup/dist/magnific-popup.css'
+        'node_modules/magnific-popup/dist/magnific-popup.css',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
+        'node_modules/rateyo/src/jquery.rateyo.css',
+        'node_modules/nouislider/distribute/nouislider.css'
     ])
         .pipe(concat('libs.min.css'))
         .pipe(cssmin())
@@ -30,7 +33,11 @@ gulp.task('style', () => {
 gulp.task('script', () => {
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.js',
-        'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
+        'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
+        'node_modules/rateyo/src/jquery.rateyo.js',
+        'node_modules/mixitup/dist/mixitup.js',
+        'node_modules/nouislider/distribute/nouislider.js'
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
@@ -45,7 +52,7 @@ gulp.task('js', () => {
         .pipe(browserSync.reload({stream: true}))
 })
 gulp.task('watch', () => {
-    gulp.watch('app/scss/style.scss', gulp.parallel('sass'))
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'))
     gulp.watch('app/*.html', gulp.parallel('html'))
     gulp.watch('app/js/*.js', gulp.parallel('js'))
 })
